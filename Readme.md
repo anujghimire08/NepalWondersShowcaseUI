@@ -2,7 +2,7 @@
   <img src="https://readme-typing-svg.herokuapp.com?size=35&duration=2600&pause=1200&center=true&vCenter=true&width=850&lines=Nepal+Wonders+Showcase;Cultural+%26+Heritage+Image+Slider;HTML+CSS+JS;Explore+Nepal's+Beauty;Modern+Responsive+UI" />
 </p>
 
-# Nepal Wonders Showcase UI
+# Nepal Wonders Showcase 
 
 **Nepal Wonders Showcase** is a visually captivating **image slider UI** built using  
 **HTML, CSS, and JavaScript**.  
@@ -58,5 +58,4 @@ Nepal-Wonders-Showcase/
 │── style.css
 │── script.js
 │── images
-
 ```
