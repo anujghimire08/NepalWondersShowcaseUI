@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloock&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.slides-box {
+  width: 1000px;
+  max-width: 100%;
+  height: 600px;
+  border-radius: 20px;
+  margin: 50px auto;
+  overflow: hidden;
+  position: relative;
+}
+.slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 15px 0 0;
+  transition: transform 0.6s ease-in-out;
+}
+.slide {
+  min-width: 100%;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  user-select: none;
+  pointer-events: none;
+}
+.slide.active {
+  pointer-events: auto;
+}
+
+.details-box-center {
+  position: absolute;
+  z-index: 200;
+  background-color: white;
+  bottom: 0;
+  left: 23%;
+  width: 50%;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px 0 20px;
+  text-align: center;
+  overflow: visible;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.details-box-center h3 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.details-box-center p3 {
+  font-size: 14px;
+  color: #312f2f;
+  margin: 5px 0 10px;
+}
+
+.details-box-center .details-title {
+  font-family: "Gloock", serif;
+  text-transform: capitalize;
+  font-family: serif;
+  font-weight: 700;
+  font-size: 1.9rem;
+  color: #2c2a29;
+  letter-spacing: 0.03rem;
+  margin-bottom: 0.3rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.details-box-center .details-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #6b5b3b;
+  letter-spacing: 0.04rem;
+  line-height: 1.4;
+  margin-top: 0;
+  opacity: 0.85;
+}
+.btns {
+  margin-top: 20px 0 15px;
+  text-align: center;
+}
+.btn {
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  margin: 0 10px;
+  user-select: none;
+  margin-bottom: 10px;
+}
+.btn.first {
+  background-color: #ffc727;
+  color: black;
+  box-shadow: 0 4px 12px rgba(255, 199, 39, 0.4);
+}
+
+.btn.first:hover {
+  background-color: #ffb400;
+  box-shadow: 0 6px 16px rgba(255, 180, 0, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn.second {
+  background-color: transparent;
+  color: #ffc727;
+  border: 2px solid #ffc727;
+}
+
+.btn.second:hover {
+  background-color: #fff8e1;
+  color: black;
+  border-color: #ffb400;
+  transform: translateY(-2px);
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.dot.active {
+  background-color: #333;
+}
